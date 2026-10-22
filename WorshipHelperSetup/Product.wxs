@@ -1,5 +1,5 @@
 ﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
-	<Package Name="WorshipHelper" Language="1033" Version="!(bind.fileVersion.WorshipHelperVSTO_dll)" Manufacturer="WorshipHelper" UpgradeCode="cd4af055-5197-40b2-b7e7-ad60de11b453" InstallerVersion="200">
+	<Package Name="VMMC" Language="1033" Version="!(bind.fileVersion.WorshipHelperVSTO_dll)" Manufacturer="VMMC" UpgradeCode="cd4af055-5197-40b2-b7e7-ad60de11b453" InstallerVersion="200">
 		
 
 		<MajorUpgrade AllowSameVersionUpgrades="yes" DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
@@ -8,7 +8,7 @@
 		<ui:WixUI Id="WixUI_Minimal" />
 		<WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
 
-		<Feature Id="ProductFeature" Title="WorshipHelper" Level="1">
+		<Feature Id="ProductFeature" Title="VMMC" Level="1">
 			<ComponentGroupRef Id="ProductComponents" />
 			<ComponentRef Id="Registry_FriendlyName" />
 			<ComponentRef Id="Registry_Description" />
@@ -33,14 +33,14 @@
 
 	<Fragment>
 			<StandardDirectory Id="ProgramFilesFolder">
-				<Directory Id="INSTALLFOLDER" Name="WorshipHelper">
+				<Directory Id="INSTALLFOLDER" Name="VMMC">
 					<Directory Id="DATA_DIR" Name="Data">
 						<Directory Id="TEMPLATES_DIR" Name="Templates" />
 						<Directory Id="BIBLES_DIR" Name="Bibles" />
 					</Directory>
 				</Directory>
 				<Component Id="Registry_FriendlyName">
-					<RegistryValue Id="RegKey_FriendlyName" Root="HKCU" Key="Software\Microsoft\Office\PowerPoint\Addins\WorshipHelper" Name="FriendlyName" Value="WorshipHelper" Type="string" KeyPath="yes" />
+					<RegistryValue Id="RegKey_FriendlyName" Root="HKCU" Key="Software\Microsoft\Office\PowerPoint\Addins\WorshipHelper" Name="FriendlyName" Value="VMMC" Type="string" KeyPath="yes" />
 				</Component>
 				<Component Id="Registry_Description">
 					<RegistryValue Id="RegKey_Description" Root="HKCU" Key="Software\Microsoft\Office\PowerPoint\Addins\WorshipHelper" Name="Description" Value="Easily build service presentations for your church" Type="string" KeyPath="yes" />

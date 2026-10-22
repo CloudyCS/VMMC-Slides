@@ -1,6 +1,6 @@
 <Project Sdk="WixToolset.Sdk/7.0.0">
   <PropertyGroup>
-    <Name>WorshipHelperSetup</Name>
+    <Name>VMMCSetup</Name>
     <AcceptEula>wix7</AcceptEula>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">

@@ -11,7 +11,8 @@ namespace WorshipHelperVSTO
         {
             var favRegistryKey = Registry.CurrentUser.CreateSubKey(@"SOFTWARE\WorshipHelper\Favourites");
             var favouriteCount = favRegistryKey.GetValueNames().Length;
-            for (int i=0; i < favouriteCount; i++)
+            var visibleFavouriteCount = System.Math.Min(favouriteCount, favouriteButtons.Count);
+            for (int i=0; i < visibleFavouriteCount; i++)
             {
                 var file = favRegistryKey.GetValueNames()[i];
                 var slideButton = favouriteButtons[i];
@@ -23,7 +24,7 @@ namespace WorshipHelperVSTO
             }
 
             // Hide the unused buttons
-            for (int i = favouriteCount; i < favouriteButtons.Count; i++)
+            for (int i = visibleFavouriteCount; i < favouriteButtons.Count; i++)
             {
                 var slideButton = favouriteButtons[i];
                 slideButton.Visible = false;
@@ -38,6 +39,11 @@ namespace WorshipHelperVSTO
         private void btnInsertSong_Click(object sender, RibbonControlEventArgs e)
         {
             new SongManager().InsertSong();
+        }
+
+        private void btnSongLibrary_Click(object sender, RibbonControlEventArgs e)
+        {
+            new SongLibraryForm().ShowDialog();
         }
 
         private void btnInsertScripture_Click(object sender, RibbonControlEventArgs e)

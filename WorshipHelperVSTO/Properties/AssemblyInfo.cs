@@ -5,12 +5,12 @@ using log4net.Config;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WorshipHelper")]
+[assembly: AssemblyTitle("VMMC")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("WorshipHelper")]
-[assembly: AssemblyCopyright("Copyright © George Dewar 2020")]
+[assembly: AssemblyProduct("VMMC")]
+[assembly: AssemblyCopyright("Copyright © VMMC 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

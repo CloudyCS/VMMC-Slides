@@ -38,10 +38,10 @@
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>days</UpdateIntervalUnits>
-    <ProductName>WorshipHelper</ProductName>
-    <PublisherName>George Dewar</PublisherName>
+    <ProductName>VMMC</ProductName>
+    <PublisherName>VMMC</PublisherName>
     <SupportUrl />
-    <FriendlyName>WorshipHelper</FriendlyName>
+    <FriendlyName>VMMC</FriendlyName>
     <OfficeApplicationDescription>Easily add songs %28in the form of existing presentations%29 and scripture passages to your presentation to build your service presentation in seconds</OfficeApplicationDescription>
     <LoadBehavior>3</LoadBehavior>
   </PropertyGroup>
@@ -94,6 +94,16 @@
     <DefineConstants>$(DefineConstants);DEBUG;TRACE</DefineConstants>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>$(DefineConstants);DEBUG;TRACE</DefineConstants>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
   <!--
     This section defines properties that are set when the "Release" configuration is selected.
 
@@ -116,6 +126,15 @@
     <OutputPath>bin\Release\</OutputPath>
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
     <DefineConstants>$(DefineConstants);TRACE</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>$(DefineConstants);TRACE</DefineConstants>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <!--
@@ -243,6 +262,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="SongManager.cs" />
+    <Compile Include="SongLibraryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TestRibbonItem.cs">
       <SubType>Component</SubType>
     </Compile>

@@ -75,6 +75,7 @@ namespace WorshipHelperVSTO
             this.group1 = this.Factory.CreateRibbonGroup();
             this.btnInsertScripture = this.Factory.CreateRibbonButton();
             this.btnInsertSong = this.Factory.CreateRibbonButton();
+            this.btnSongLibrary = this.Factory.CreateRibbonButton();
             this.favouritesGroup = this.Factory.CreateRibbonGroup();
             this.btnAddFavourite = this.Factory.CreateRibbonButton();
             this.grpDebug = this.Factory.CreateRibbonGroup();
@@ -90,13 +91,14 @@ namespace WorshipHelperVSTO
             this.tab1.Groups.Add(this.group1);
             this.tab1.Groups.Add(this.favouritesGroup);
             this.tab1.Groups.Add(this.grpDebug);
-            this.tab1.Label = "WorshipHelper";
+            this.tab1.Label = "VMMC";
             this.tab1.Name = "tab1";
             // 
             // group1
             // 
             this.group1.Items.Add(this.btnInsertScripture);
             this.group1.Items.Add(this.btnInsertSong);
+            this.group1.Items.Add(this.btnSongLibrary);
             this.group1.Label = "Insert";
             this.group1.Name = "group1";
             // 
@@ -117,6 +119,15 @@ namespace WorshipHelperVSTO
             this.btnInsertSong.Name = "btnInsertSong";
             this.btnInsertSong.ShowImage = true;
             this.btnInsertSong.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnInsertSong_Click);
+            // 
+            // btnSongLibrary
+            // 
+            this.btnSongLibrary.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
+            this.btnSongLibrary.Image = global::WorshipHelperVSTO.Properties.Resources.music_note;
+            this.btnSongLibrary.Label = "Song Library";
+            this.btnSongLibrary.Name = "btnSongLibrary";
+            this.btnSongLibrary.ShowImage = true;
+            this.btnSongLibrary.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnSongLibrary_Click);
             // 
             // favouritesGroup
             // 
@@ -169,6 +180,7 @@ namespace WorshipHelperVSTO
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup group1;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnInsertScripture;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnInsertSong;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton btnSongLibrary;
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup favouritesGroup;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnAddFavourite;
         internal RibbonGroup grpDebug;
