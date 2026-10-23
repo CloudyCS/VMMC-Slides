@@ -75,6 +75,7 @@ namespace WorshipHelperVSTO
             this.group1 = this.Factory.CreateRibbonGroup();
             this.btnInsertScripture = this.Factory.CreateRibbonButton();
             this.btnInsertSong = this.Factory.CreateRibbonButton();
+            this.btnCreateSongSlides = this.Factory.CreateRibbonButton();
             this.btnSongLibrary = this.Factory.CreateRibbonButton();
             this.favouritesGroup = this.Factory.CreateRibbonGroup();
             this.btnAddFavourite = this.Factory.CreateRibbonButton();
@@ -98,6 +99,7 @@ namespace WorshipHelperVSTO
             // 
             this.group1.Items.Add(this.btnInsertScripture);
             this.group1.Items.Add(this.btnInsertSong);
+            this.group1.Items.Add(this.btnCreateSongSlides);
             this.group1.Items.Add(this.btnSongLibrary);
             this.group1.Label = "Insert";
             this.group1.Name = "group1";
@@ -119,6 +121,15 @@ namespace WorshipHelperVSTO
             this.btnInsertSong.Name = "btnInsertSong";
             this.btnInsertSong.ShowImage = true;
             this.btnInsertSong.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnInsertSong_Click);
+            // 
+            // btnCreateSongSlides
+            // 
+            this.btnCreateSongSlides.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
+            this.btnCreateSongSlides.Image = global::WorshipHelperVSTO.Properties.Resources.music_note;
+            this.btnCreateSongSlides.Label = "Create Song";
+            this.btnCreateSongSlides.Name = "btnCreateSongSlides";
+            this.btnCreateSongSlides.ShowImage = true;
+            this.btnCreateSongSlides.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.btnCreateSongSlides_Click);
             // 
             // btnSongLibrary
             // 
@@ -180,6 +191,7 @@ namespace WorshipHelperVSTO
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup group1;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnInsertScripture;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnInsertSong;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton btnCreateSongSlides;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnSongLibrary;
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup favouritesGroup;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton btnAddFavourite;

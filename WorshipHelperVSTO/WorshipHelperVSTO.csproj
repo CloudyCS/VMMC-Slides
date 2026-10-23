@@ -33,7 +33,7 @@
     <PublishUrl>publish\</PublishUrl>
     <InstallUrl>https://dewar.co.nz/WorshipHelper/</InstallUrl>
     <TargetCulture>en</TargetCulture>
-    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <ApplicationVersion>2.0.0.0</ApplicationVersion>
     <AutoIncrementApplicationRevision>false</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>7</UpdateInterval>
@@ -262,6 +262,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="SongManager.cs" />
+    <Compile Include="SongSlideManager.cs" />
+    <Compile Include="CreateSongSlidesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SongLibraryForm.cs">
       <SubType>Form</SubType>
     </Compile>

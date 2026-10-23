@@ -6,6 +6,12 @@ VMMC is a desktop PowerPoint add-in. It can insert existing song presentations w
 
 You must have PowerPoint 2013 or later installed.
 
+## Creating song slides
+
+Use **VMMC > Create Song** to generate a presentation section from pasted lyrics. Enter the song title, paste the lyrics, choose a theme, and click **Create**. The add-in creates a title slide followed by one lyric slide for each paragraph. Separate paragraphs with a blank line; lines within a paragraph remain together on the same slide.
+
+The first version uses three local themes: dark, light, and blue. Lyrics and title text are bold, centered, and automatically fitted inside a generous slide-sized text box for projection readability. Slide creation is performed locally with PowerPoint automation, so lyrics are not sent to a web service. Very long paragraphs should still be reviewed after creation because they may need to be split manually for projection.
+
 ## Song library
 
 Use **VMMC > Song Library** to choose the folder that contains your `.ppt` and `.pptx` song files. VMMC stores that folder for future PowerPoint sessions. Click **Refresh** after adding, removing, or renaming files.

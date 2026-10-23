@@ -41,6 +41,11 @@ namespace WorshipHelperVSTO
             new SongManager().InsertSong();
         }
 
+        private void btnCreateSongSlides_Click(object sender, RibbonControlEventArgs e)
+        {
+            new CreateSongSlidesForm().ShowDialog();
+        }
+
         private void btnSongLibrary_Click(object sender, RibbonControlEventArgs e)
         {
             new SongLibraryForm().ShowDialog();
