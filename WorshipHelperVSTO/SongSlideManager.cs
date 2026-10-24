@@ -95,7 +95,7 @@ namespace WorshipHelperVSTO
                 textBoxHeight);
             var textRange = textBox.TextFrame.TextRange;
             textRange.Text = text;
-            textRange.Font.Name = "Arial";
+            textRange.Font.Name = "Nirmala UI";
             textRange.Font.Size = fontSize;
             textRange.Font.Bold = MsoTriState.msoTrue;
             textRange.Font.Color.RGB = ColorTranslator.ToOle(colors.Foreground);
